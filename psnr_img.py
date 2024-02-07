@@ -31,4 +31,4 @@ if __name__ == '__main__':
         img2 = cv2.imread(pth+img2_name+str(i)+".png")
         res1 = psnr1(img1,img2)
         print("res1:",res1)
-        _print("第{:1d}张图图片质量:{:.10f}".format(i,res1))
+        _print("{:1d} image quality-PSNR:{:.10f}".format(i,res1))

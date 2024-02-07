@@ -48,19 +48,9 @@ class YOLOV5DataSetConfig:
         (np.random.randint(255), np.random.randint(255), np.random.randint(255)) for _ in range(len(kinds_name))
     ]
 #R_mean is 0.330720, G_mean is 0.349062, B_mean is 0.310268 for NWPU VHR-10
-    mean = [0.330720, 0.349062, 0.310268]
+    mean = [0.5, 0.5, 0.5]
 #R_var is 0.197215, G_var is 0.185535, B_var is 0.187597 for NWPU VHR-10
-    std = [0.197215, 0.185535, 0.187597]
-
-class YOLOV4AdversarialAttackConfig:
-    lambda_conf = 1.0
-    lambda_cls = 1.0
-    lambda_loc = 1.0
-    eps = 10/255
-    max_iter = 10
-    eps_iter = 1.0 / 255
-    momentum = 1.0
-    pd= None
+    std = [0.5, 0.5, 0.5]
 
 class YOLOV5TrainConfig:
     max_epoch_on_detector = 351

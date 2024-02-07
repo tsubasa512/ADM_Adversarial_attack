@@ -69,6 +69,6 @@ if __name__ == '__main__':
         img2 = np.array(img2)
         res1 = cal_ssim(img1, img2)
         print("res1:",res1)
-        _print("第{:1d}张图图片质量:{:.10f}".format(i,res1))
+        _print("{:1d} image quality-SSIM:{:.10f}".format(i,res1))
 
 
